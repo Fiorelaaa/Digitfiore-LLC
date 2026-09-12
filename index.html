@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DIGITFIORE LLC | Politicas y contacto</title>
+  <meta name="description" content="Tienda online de tecnología y productos innovadores para facilitar tu día a día, con opciones prácticas, modernas y de calidad." />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <style>
+    :root {
+      --color-principal: #D4AF37;
+      --color-secundario: #FF2DA0;
+      --fondo-uno: #0a0a0a;
+      --fondo-dos: #1a0f14;
+
+      --texto: #f5f2ea;
+      --texto-suave: rgba(245, 242, 234, 0.72);
+      --tarjeta: rgba(255, 255, 255, 0.05);
+      --borde: rgba(212, 175, 55, 0.32);
+      --sombra: 0 18px 48px rgba(0, 0, 0, 0.55);
+      --radio: 20px;
+      --ancho-maximo: 1240px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--texto);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(900px 520px at 10% 12%, rgba(255, 45, 160, 0.14), transparent 62%),
+        radial-gradient(760px 500px at 92% 10%, rgba(212, 175, 55, 0.16), transparent 64%),
+        linear-gradient(135deg, var(--fondo-uno), var(--fondo-dos));
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .contenedor {
+      width: min(var(--ancho-maximo), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 20px 0 76px;
+    }
+
+    .barra {
+      position: sticky;
+      top: 14px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 12px 14px;
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      border-radius: 999px;
+      background: rgba(20, 16, 18, 0.78);
+      box-shadow: var(--sombra);
+      backdrop-filter: blur(14px);
+    }
+
+    .marca {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 230px;
+      text-decoration: none;
+    }
+
+    .logo {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      padding: 4px;
+      border: 1px solid var(--borde);
+      border-radius: 14px;
+      background: #000;
+    }
+
+    .marca strong,
+    .marca small {
+      display: block;
+    }
+
+    .marca strong {
+      line-height: 1.1;
+    }
+
+    .marca small {
+      margin-top: 2px;
+      color: var(--texto-suave);
+      font-size: 12px;
+      font-weight: 750;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .nav a,
+    .indice a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      color: rgba(245, 242, 234, 0.86);
+      font-size: 14px;
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .nav a:hover,
+    .indice a:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .boton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      color: #1a1206;
+      background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+      box-shadow: 0 14px 26px rgba(255, 45, 160, 0.28);
+      font-weight: 950;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 16px;
+      margin-top: 18px;
+      padding: 22px;
+      border: 1px solid rgba(212, 175, 55, 0.24);
+      border-radius: var(--radio);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+      box-shadow: var(--sombra);
+    }
+
+    .etiqueta {
+      display: inline-flex;
+      width: fit-content;
+      margin: 0;
+      padding: 8px 12px;
+      border: 1px solid var(--borde);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      font-size: 13px;
+      font-weight: 950;
+      color: var(--color-principal);
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 14px 0 10px;
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1.02;
+      letter-spacing: 0;
+      background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .texto-hero {
+      max-width: 780px;
+      margin: 0;
+      color: var(--texto-suave);
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .pildoras {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .pildora {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 9px 12px;
+      border: 1px solid rgba(255, 45, 160, 0.24);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      font-size: 14px;
+      font-weight: 850;
+    }
+
+    .tarjeta-rapida,
+    .contenido,
+    .tarjeta-indice,
+    .contacto {
+      border: 1px solid var(--borde);
+      border-radius: var(--radio);
+      background: var(--tarjeta);
+      box-shadow: var(--sombra);
+    }
+
+    .tarjeta-rapida {
+      padding: 14px;
+    }
+
+    .fila-rapida {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--borde);
+    }
+
+    .fila-rapida:last-child {
+      border-bottom: 0;
+    }
+
+    .icono {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 34px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(255, 45, 160, 0.24), rgba(212, 175, 55, 0.22));
+      color: #1a1206;
+      font-size: 12px;
+      font-weight: 950;
+      flex: 0 0 auto;
+    }
+
+    .fila-rapida strong,
+    .fila-rapida span,
+    .fila-rapida a {
+      display: block;
+      overflow-wrap: anywhere;
+    }
+
+    .fila-rapida span,
+    .fila-rapida a {
+      margin-top: 3px;
+      color: var(--texto-suave);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 16px;
+      align-items: start;
+      margin-top: 16px;
+    }
+
+    .contenido {
+      padding: 16px;
+    }
+
+    details {
+      margin-bottom: 12px;
+      overflow: hidden;
+      border: 1px solid var(--borde);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    summary {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      padding: 15px;
+      cursor: pointer;
+      list-style: none;
+      font-weight: 950;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .tag {
+      padding: 6px 10px;
+      border: 1px solid var(--borde);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--color-principal);
+      font-size: 12px;
+    }
+
+    .titulo-acordeon {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .flecha {
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      transition: transform 0.16s ease;
+    }
+
+    details[open] .flecha {
+      transform: rotate(180deg);
+    }
+
+    .cuerpo-acordeon {
+      padding: 0 16px 16px;
+      border-top: 1px solid var(--borde);
+    }
+
+    .cuerpo-acordeon p,
+    .cuerpo-acordeon li {
+      color: rgba(245, 242, 234, 0.82);
+      line-height: 1.7;
+    }
+
+    .cuerpo-acordeon h3 {
+      margin: 16px 0 8px;
+      font-size: 16px;
+      color: var(--color-principal);
+    }
+
+    .contacto {
+      margin-top: 4px;
+      padding: 16px;
+      scroll-margin-top: 96px;
+    }
+
+    .contacto h2,
+    .tarjeta-indice h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    .contacto p {
+      margin: 0 0 14px;
+      color: var(--texto-suave);
+      line-height: 1.65;
+    }
+
+    .grid-contacto {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .campo {
+      min-height: 76px;
+      padding: 12px;
+      border: 1px solid var(--borde);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .campo strong,
+    .campo span,
+    .campo a {
+      display: block;
+    }
+
+    .campo strong {
+      margin-bottom: 5px;
+    }
+
+    .campo span,
+    .campo a {
+      color: var(--texto-suave);
+      overflow-wrap: anywhere;
+    }
+
+    .tarjeta-indice {
+      position: sticky;
+      top: 94px;
+      padding: 14px;
+    }
+
+    .indice {
+      display: grid;
+      gap: 6px;
+    }
+
+    .indice a {
+      justify-content: flex-start;
+      border: 1px solid var(--borde);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 18px;
+      padding: 0 6px;
+      color: var(--texto-suave);
+      font-size: 14px;
+      font-weight: 750;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 30;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 148px;
+      min-height: 56px;
+      padding: 10px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+      color: #fff;
+      background: linear-gradient(135deg, #22c55e, #10b981);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .whatsapp span {
+      font-weight: 950;
+    }
+
+    .whatsapp small {
+      margin-top: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 980px) {
+      .barra {
+        align-items: flex-start;
+        border-radius: 24px;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .hero,
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .tarjeta-indice {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .contenedor {
+        width: min(100% - 24px, var(--ancho-maximo));
+      }
+
+      .barra {
+        top: 8px;
+      }
+
+      .boton {
+        padding-inline: 12px;
+      }
+
+      .hero {
+        padding: 16px;
+      }
+
+      .grid-contacto {
+        grid-template-columns: 1fr;
+      }
+
+      .titulo-acordeon {
+        white-space: normal;
+      }
+
+      .whatsapp {
+        min-width: auto;
+        right: 12px;
+        bottom: 12px;
+      }
+
+      .whatsapp small {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contenedor">
+    <header class="barra">
+      <a class="marca" href="#inicio" aria-label="Ir al inicio">
+        <img class="logo" src="logo.png" alt="Logo de DIGITFIORE LLC" />
+        <span>
+          <strong>DIGITFIORE LLC</strong>
+          <small>Tecnología e innovación</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegacion principal">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#cambios">Cambios</a>
+        <a href="#retracto">Retracto</a>
+        <a href="#reversion">Reversion</a>
+        <a href="#privacidad">Privacidad</a>
+        <a href="#envios">Envios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="boton" href="https://wa.me/15129692339?text=Hola%2C%20quiero%20soporte%20con%20DIGITFIORE%20LLC" target="_blank" rel="noopener">
+        Soporte
+      </a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-label="Informacion principal">
+        <div>
+          <p class="etiqueta">Informacion oficial de DIGITFIORE LLC</p>
+          <h1>Tecnología que simplifica tu día a día</h1>
+          <p class="texto-hero">Es una tienda online dedicada a la comercialización de productos tecnológicos, innovadores y prácticos para el día a día. Seleccionamos productos de diferentes categorías que buscan ofrecer soluciones útiles, funcionales y accesibles para nuestros clientes. Brindamos una experiencia de compra sencilla, atención al cliente y opciones de entrega según el destino.</p>
+
+          <div class="pildoras" aria-label="Beneficios">
+            <span class="pildora">Envío disponible según destino</span>
+            <span class="pildora">Productos 100% de calidad</span>
+            <span class="pildora">Atención personalizada</span>
+            <span class="pildora">Garantia de satisfaccion</span>
+          </div>
+        </div>
+
+        <aside class="tarjeta-rapida" aria-label="Datos rapidos">
+          <div class="fila-rapida">
+            <span class="icono">Email</span>
+            <span>
+              <strong>Correo</strong>
+              <a href="mailto:fiorelarafael106@gmail.com">fiorelarafael106@gmail.com</a>
+            </span>
+          </div>
+          <div class="fila-rapida">
+            <span class="icono">Tel</span>
+            <span>
+              <strong>Telefono / WhatsApp</strong>
+              <a href="https://wa.me/15129692339" target="_blank" rel="noopener">(512) 969-2339</a>
+            </span>
+          </div>
+          <div class="fila-rapida">
+            <span class="icono">Dir</span>
+            <span>
+              <strong>Direccion</strong>
+              <span>30 N Gould St STE R</span>
+              <span>Sheridan, Wyoming - Codigo postal: 82801</span>
+            </span>
+          </div>
+        </aside>
+      </section>
+
+      <div class="layout">
+        <section class="contenido" aria-label="Contenido informativo">
+
+          <details id="nosotros" open>
+            <summary>
+              <span class="tag">Nosotros</span>
+              <span class="titulo-acordeon">Sobre DIGITFIORE LLC</span>
+              <span class="flecha">v</span>
+            </summary>
+            <div class="cuerpo-acordeon">
+              <p>DIGITFIORE LLC es una tienda online de tecnología dedicada a ofrecer productos innovadores y prácticos que facilitan el día a día de nuestros clientes.</p>
+              <p>Seleccionamos cuidadosamente cada producto de nuestro catálogo para brindar soluciones útiles, funcionales y accesibles. Nuestro equipo esta comprometido con ofrecerte la mejor experiencia de compra: desde la selección del producto hasta la entrega en tu puerta.</p>
+              <h3>Principios de la tienda</h3>
+              <ul>
+                <li>Calidad garantizada en cada producto que ofrecemos.</li>
+                <li>Transparencia y honestidad con nuestros clientes en todo momento.</li>
+                <li>Compromiso real con brindar soluciones prácticas y de calidad.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details id="cambios">
+            <summary>
+              <span class="tag">Cambios</span>
+              <span class="titulo-acordeon">Politica de cambios y devoluciones</span>
+              <span class="flecha">v</span>
+            </summary>
+            <div class="cuerpo-acordeon">
+              <p>Si deseas hacer el cambio de alguno de los productos que adquiriste en nuestra tienda online, cuentas con un plazo de cinco (5) días calendario desde la fecha de recepción del pedido para escribir a nuestro correo electrónico fiorelarafael106@gmail.com o por WhatsApp al (512) 969-2339, indicando la información necesaria. Te contestaremos indicando el procedimiento correspondiente y si la solicitud es autorizada de acuerdo con las políticas, términos y condiciones de DIGITFIORE LLC.</p>
+              <p>El producto que vas a cambiar no debe estar usado, modificado o alterado de su estado original; debe estar en buen estado, limpio y con sus etiquetas y empaques originales. Los costos de envío y demás que conlleve el cambio serán cubiertos por el cliente, salvo que el error en la entrega haya sido responsabilidad de DIGITFIORE LLC. Los cambios pueden tardar hasta 10 días hábiles. Los productos en promoción o descuento de nuestra sección de OFERTAS no tienen cambio.</p>
+              <h3>Datos recomendados para solicitar un cambio</h3>
+              <ul>
+                <li>Nombre completo</li>
+                <li>Documento de identidad</li>
+                <li>Numero de pedido</li>
+                <li>Fecha del pedido</li>
+                <li>Telefono de contacto</li>
+                <li>Producto</li>
+              </ul>
+            </div>
+          </details>
+
+          <details id="retracto">
+            <summary>
+              <span class="tag">Retracto</span>
+              <span class="titulo-acordeon">Derecho de retracto</span>
+              <span class="flecha">v</span>
+            </summary>
+            <div class="cuerpo-acordeon">
+              <p>El cliente tiene derecho a retractarse de su compra dentro de los cinco (5) días hábiles siguientes a la fecha de entrega del pedido, sin necesidad de justificar su decisión, siempre que el producto se encuentre en las mismas condiciones en que fue recibido: nuevo, sin uso, sin daños ni deterioro, con todas sus etiquetas y empaques originales. Los costos de envío y demás que conlleve la devolución serán cubiertos por el cliente. Para ejercer este derecho, debes enviar un correo electrónico a fiorelarafael106@gmail.com con el asunto "retracto", indicando tus datos de compra y de contacto.</p>
+              <p>Se exceptúan del derecho de retracto los productos confeccionados o personalizados conforme a las especificaciones del cliente, los bienes que por su naturaleza no puedan ser devueltos o puedan deteriorarse con rapidez, los servicios cuya prestación ya haya comenzado con el acuerdo del cliente y los productos de uso personal.</p>
+              <p>DIGITFIORE LLC reintegrará el valor pagado, sin descuentos ni retenciones, dentro de un plazo máximo de treinta (30) días calendario contados desde que se reciba el producto devuelto en las condiciones descritas y se confirme que la solicitud cumple con esta política.</p>
+            </div>
+          </details>
+
+          <details id="reversion">
+            <summary>
+              <span class="tag">Pago</span>
+              <span class="titulo-acordeon">Reversion del pago</span>
+              <span class="flecha">v</span>
+            </summary>
+            <div class="cuerpo-acordeon">
+              <p>Si tu compra en DIGITFIORE LLC fue realizada mediante tarjeta de crédito, débito u otro medio de pago electrónico y se presenta alguna de las causales descritas a continuación, puedes solicitar la reversión del pago directamente con la entidad emisora de tu tarjeta o medio de pago, dentro de los plazos que esa entidad establezca.</p>
+              <p>Para agilizar tu solicitud, te recomendamos primero escribir un correo electrónico a fiorelarafael106@gmail.com con tu nombre completo, número de pedido y la razón de la solicitud. Este derecho aplica únicamente para compras realizadas mediante mecanismos de comercio electrónico (internet o tienda virtual) con tarjeta de crédito, débito u otro instrumento de pago electrónico, y no aplica para pago contra entrega en efectivo. Las solicitudes presentadas de mala fe podrán ser rechazadas conforme a las políticas del medio de pago utilizado.</p>
+              <ul>
+                <li>Fraude en la transaccion o cuando corresponda a una operacion no solicitada.</li>
+                <li>Cuando el producto no llega o no cumple con las caracteristicas informadas.</li>
+                <li>Defectos en el producto adquirido.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details id="privacidad">
+            <summary>
+              <span class="tag">Privacidad</span>
+              <span class="titulo-acordeon">Politica de privacidad</span>
+              <span class="flecha">v</span>
+            </summary>
+            <div class="cuerpo-acordeon">
+              <p>La presente Política de Privacidad establece los términos en que DIGITFIORE LLC usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Nuestro sitio puede recoger información personal como nombre, correo electrónico, número de teléfono, dirección de entrega e información demográfica, así como los datos necesarios para procesar un pedido, facturación o entrega. Esta compañía está comprometida con la seguridad de los datos de sus usuarios y solo empleará esta información de acuerdo con los términos de este documento.</p>
+              <p>Usamos la información recogida para brindar el mejor servicio posible, mantener un registro de pedidos y mejorar nuestros productos y servicios. Ocasionalmente podremos enviar correos electrónicos con ofertas especiales, nuevos productos u otra información relevante; estos correos podrán ser cancelados en cualquier momento. Esta Política de Privacidad puede cambiar con el tiempo, por lo que recomendamos revisarla periódicamente.</p>
+            </div>
+          </details>
+
+          <details id="envios">
+            <summary>
+              <span class="tag">Envios</span>
+              <span class="titulo-acordeon">Politica de envios</span>
+              <span class="flecha">v</span>
+            </summary>
+            <div class="cuerpo-acordeon">
+              <p>Tiempo de envío: 48/72 horas para la mayoría de los destinos. Esto puede variar dependiendo de los días hábiles; son tiempos estimados y no constituyen una garantía de fecha exacta de entrega.</p>
+              <p>El envío será gratuito siempre y cuando se especifique en la oferta correspondiente al momento de la compra.</p>
+              <p>El tiempo de procesamiento es de 24 horas hábiles aproximadamente; después de este periodo recibirás tu guía para rastrear tu pedido.</p>
+            </div>
+          </details>
+
+          <section id="contacto" class="contacto" aria-label="Contacto">
+            <h2>Contacto</h2>
+            <p>
+              Si necesitas soporte, escribe a fiorelarafael106@gmail.com o comunicate por WhatsApp.
+              Horario de atencion: Siempre abierto.
+            </p>
+
+            <div class="grid-contacto">
+              <div class="campo">
+                <strong>Nombre / encargado</strong>
+                <span>RUT Fiorela Rafael Diaz</span>
+              </div>
+              <div class="campo">
+                <strong>Empresa</strong>
+                <span>DIGITFIORE LLC</span>
+              </div>
+              <div class="campo">
+                <strong>Direccion</strong>
+                <span>30 N Gould St STE R</span>
+              </div>
+              <div class="campo">
+                <strong>Ciudad / Departamento</strong>
+                <span>Sheridan, Wyoming</span>
+              </div>
+              <div class="campo">
+                <strong>Telefono</strong>
+                <a href="https://wa.me/15129692339" target="_blank" rel="noopener">(512) 969-2339</a>
+              </div>
+              <div class="campo">
+                <strong>Email</strong>
+                <a href="mailto:fiorelarafael106@gmail.com">fiorelarafael106@gmail.com</a>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <aside class="tarjeta-indice" aria-label="Indice">
+          <h2>Indice</h2>
+          <nav class="indice">
+            <a href="#nosotros">Nosotros</a>
+            <a href="#cambios">Cambios y devoluciones</a>
+            <a href="#retracto">Derecho de retracto</a>
+            <a href="#reversion">Reversion del pago</a>
+            <a href="#privacidad">Privacidad</a>
+            <a href="#envios">Politica de envios</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <span>&copy; <span id="anio"></span> DIGITFIORE LLC. Todos los derechos reservados.</span>
+      <span>Version vigente: Septiembre 2026</span>
+    </footer>
+  </div>
+
+  <a class="whatsapp" href="https://wa.me/15129692339?text=Hola%2C%20quiero%20soporte%20con%20DIGITFIORE%20LLC" target="_blank" rel="noopener" aria-label="Escribir a DIGITFIORE LLC por WhatsApp">
+    <span>WhatsApp</span>
+    <small>Soporte rapido</small>
+  </a>
+
+  <script>
+    document.getElementById("anio").textContent = new Date().getFullYear();
+
+    function abrirDesdeHash() {
+      const id = location.hash.replace("#", "");
+      if (!id) return;
+
+      const elemento = document.getElementById(id);
+      if (!elemento) return;
+
+      if (elemento.tagName.toLowerCase() === "details") {
+        elemento.open = true;
+      }
+
+      elemento.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach((enlace) => {
+      enlace.addEventListener("click", (evento) => {
+        const id = enlace.getAttribute("href").replace("#", "");
+        const elemento = document.getElementById(id);
+        if (!elemento) return;
+
+        evento.preventDefault();
+        history.replaceState(null, "", "#" + id);
+
+        if (elemento.tagName.toLowerCase() === "details") {
+          elemento.open = true;
+        }
+
+        elemento.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+
+    window.addEventListener("hashchange", abrirDesdeHash);
+    window.addEventListener("load", abrirDesdeHash);
+  </script>
+</body>
+</html>
